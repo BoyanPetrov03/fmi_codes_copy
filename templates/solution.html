@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Entert{R}ainment</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div style="height: 100%;" class="wrapper">
+        <div style="height: 100%; width: 50%; text-align: center;" class="a">
+            <h2>Your challenge:</h2>
+            <p class="question">{{question|safe}}</p>
+        </div>
+        <div style="height: 100%; width: 50%;" class="wrapper2">
+            <div style="min-height: 500px; max-width: 500px; border-radius: 2px; box-shadow: 3px 4px 7px 0; background-color: #FFF; padding-left: 10px; padding-top: 20px;" class="b">
+                <p>Input code:</p>
+                <p style="white-space: pre-line; text-align: left;">{{code}}</p>
+            </div>
+            <div style="min-height: 200px; max-width: 500px; border-radius: 2px; box-shadow: 3px 4px 7px 0; background-color: #FFF; padding-left: 10px; padding-top: 20px;margin-top: 30px;" class="b">
+                <p>Results:</p>
+                <p style="white-space: pre-line; text-align: left;">{{results|safe}}</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='scripts.js')}}"></script>
+  </body>
+</html>

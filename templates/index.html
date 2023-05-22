@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Entert{R}ainment</title>
+      <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="a">
+            <h2>Your challenge</h2>
+            <div class="a-inner">
+              <p class="question"></p>
+              <button onclick="refreshPage()">New challenge</button>
+            </div>
+         </div>
+         <div class="wrapper2">
+      <div class="b">
+         <form method = "post" id="form">
+            <h3 style="text-align: center;">Your answer to the question:</h3>
+               <div class="solution">
+                <pre><div class="editor">
+               <div class="line-numbers">
+                  <span></span>
+               </div>
+              <textarea class="textarea" name = "solution"></textarea>
+               <button value = "submit">SUBMIT</button>
+              </div>
+            </pre>
+               </div>
+               
+      </form>
+      </div>
+      </div>
+      </div>
+      <script src="{{url_for('static', filename='scripts.js')}}"></script>
+   </body>
+</html>

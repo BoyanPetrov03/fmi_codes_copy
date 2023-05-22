@@ -1,0 +1,3 @@
+/Users/yehor/Projects/fmicodes/test.cpp:2:11: error: expression is not assignable [clang-diagnostic-error]
+    1 + 2 = 3;
+    ~~~~~ ^
